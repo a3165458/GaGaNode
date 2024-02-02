@@ -41,10 +41,6 @@ start_service() {
     sudo ./apphub service start
 }
 
-# 检查应用状态
-check_app_status() {
-    ./apphub status
-}
 
 # 设置令牌
 set_token() {
