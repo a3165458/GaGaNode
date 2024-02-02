@@ -81,7 +81,6 @@ main() {
     install_dependencies
     download_and_install
     start_service
-    check_app_status
     set_token $1
     restart_app
     show_common_commands
