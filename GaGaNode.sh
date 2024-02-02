@@ -41,7 +41,6 @@ start_service() {
     sudo ./apphub service start
 }
 
-
 # 设置令牌
 set_token() {
     if [ -z "$1" ]; then
@@ -50,7 +49,6 @@ set_token() {
         TOKEN=$1
     fi
     sudo ./apps/gaganode/gaganode config set --token=$TOKEN
-    echo '=============== 安装完成 ===================' 
     echo "令牌已设置，请重启应用以使更改生效。"
 }
 
@@ -59,8 +57,6 @@ restart_app() {
     ./apphub restart
 }
 
-
-
 # 显示常用命令
 show_common_commands() {
     echo "常用命令:"
@@ -68,7 +64,6 @@ show_common_commands() {
     echo "  sudo ./apphub service start      # 启动节点"
     echo "  sudo ./apphub service stop       # 停止节点"
     echo "  sudo ./apphub service remove     # 移除节点"
-    echo "  ./apphub status                  # 检查节点运行状态"
     echo "  ./apphub restart                 # 重启节点"
     echo "  ./apphub upgrade                 # 升级节点"
     echo "  ./apphub log                     # 查看日志"
